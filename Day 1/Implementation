@@ -1,0 +1,17 @@
+def keyvaluepresent(mylist,n,k):
+    sts=False
+    for i in range(0,n):
+        for j in range(i+1,n):
+            if(mylist[i]+mylist[j]==k):
+                sts=True;
+    return sts
+
+
+lst=[]
+n=int(input("Enter the number of elements="))
+print("Enter the elements:")
+for i in range(0,n):
+    ele=int(input())
+    lst.append(ele)
+k=int(input("Enter the key value="))
+print(keyvaluepresent(lst,n,k))
