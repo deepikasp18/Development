@@ -1,3 +1,6 @@
+#Function that returns true
+#if any two elements add up
+# to key value
 def keyvaluepresent(mylist,n,k):
     sts=False
     for i in range(0,n):
