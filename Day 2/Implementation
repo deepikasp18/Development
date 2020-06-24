@@ -1,0 +1,15 @@
+mylist=[]                                                      
+n=int(input('Enter the total number of elements:'))
+print('Enter the elements')
+for i in range(0,n):
+    ele=int(input())
+    mylist.append(ele)     #input array
+newlist=[]
+for i in range(0,n):
+    newlist.append(1)
+for i in range(0,n):
+    for j in range(0,n):
+        if(i!=j):
+            newlist[i]=newlist[i]*mylist[j]      #creating new array
+            
+print(newlist)
